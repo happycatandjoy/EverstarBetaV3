@@ -100,6 +100,13 @@ placeholder="Student Name">
 Begin Orientation Day
 </button>
 
+<button id="saveButton">
+💾 Save Game
+</button>
+
+</div>
+
+
 </div>
 
 <div id="ui">
@@ -305,6 +312,10 @@ playerData
 )
 );
 
+alert(
+"💾 Game Saved!"
+);
+
 }
 
 // =====================
@@ -430,6 +441,12 @@ document.getElementById(
 ).addEventListener(
 "click",
 startGame
+);
+document.getElementById(
+"saveButton"
+).addEventListener(
+"click",
+saveProgress
 );
 
 document.getElementById(
